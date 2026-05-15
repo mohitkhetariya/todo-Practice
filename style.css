@@ -1,0 +1,28 @@
+*{
+    margin:0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(54, 85, 85);
+    text-align: center;
+}
+#todo-input{
+    border-radius: 20px;
+    color:rgb(20, 37, 20);
+    width: 50%;    
+    height: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.add-btn{
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    border-radius: 12px;
+    cursor:pointer;    
+}
+.done{
+    text-decoration: line-through;
+}
