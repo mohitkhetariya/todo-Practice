@@ -67,3 +67,31 @@ input.addEventListener("keyup",(e)=>{
     }
 
 });
+
+
+let promise = fetch("https://jsonplaceholder.typicode.com/users");
+let fail = fetch("https://jsonplaceholder.typicode.com/users");
+
+// promise
+fail
+.then((response)=>{
+    if(!response.ok){
+
+    throw new Error("API Failed");
+
+}
+    return response.json();
+})
+.then((dat)=>{
+    // console.log(dat);
+    dat.forEach((user)=>
+    console.log(user.name,user.address)
+    )
+})
+.catch((error)=>{
+    console.log(error);
+}).finally(()=>{
+    console.log("fetched api's");
+});
+
+//test

@@ -93,3 +93,6 @@ input.addEventListener("keyup", (e) => {
 
 // initial render
 display();
+
+
+
